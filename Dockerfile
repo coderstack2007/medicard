@@ -12,7 +12,6 @@ WORKDIR /app
 COPY backend/composer.json backend/composer.lock ./
 
 RUN composer install \
-    --no-dev \
     --no-scripts \
     --no-autoloader \
     --prefer-dist \
